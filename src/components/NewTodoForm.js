@@ -33,7 +33,7 @@ const NewTodoForm = (props) => {
         required
         sx={{ color: "primary.main", borderRadius: 1 }}
       />
-      <Button onClick={submitHandler} disabled={true} variant="outlined" sx={{mt: 0.5}}>
+      <Button onClick={submitHandler} variant="outlined" sx={{mt: 0.5}}>
         Add
       </Button>
     </Box>
