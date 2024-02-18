@@ -1,6 +1,7 @@
 # Personal Todo App
 
 This is a personal to do app built in React Js and Javascript. Material UI is used for components and Redux for state management.
+deployed site: https://main--bespoke-liger-59b5b5.netlify.app/
 
 ## Available Scripts
 
