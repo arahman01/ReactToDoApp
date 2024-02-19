@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Container, Box } from "@mui/material";
 import { useDispatch } from "react-redux";
 
 import TodoList from "../components/TodoList";
@@ -18,7 +18,7 @@ const Backlog = (props) => {
   };
 
   return (
-    <div>
+    <Box>
       <Container maxWidth="sm">
         <NewTodoForm onAddTodo={addTodoHandler} />
       </Container>
@@ -30,7 +30,7 @@ const Backlog = (props) => {
           statusRequirement="backlog"
         ></TodoList>
       </Container>
-    </div>
+    </Box>
   );
 };
 
