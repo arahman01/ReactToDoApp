@@ -1,5 +1,6 @@
 import NoContentText from "./NoContentText";
 import Todo from "./Todo";
+import "../ProjectStyles.css";
 
 const TodoList = (props) => {
   const filteredData = props.data.filter(
@@ -10,7 +11,7 @@ const TodoList = (props) => {
       {Array.isArray(filteredData) && filteredData.length === 0 && (
         <NoContentText></NoContentText>
       )}
-      <ul>
+      <ul className="listStyles">
         {filteredData.map((todo) => (
           <Todo
             key={todo.id}

@@ -18,7 +18,7 @@ const Backlog = (props) => {
   };
 
   return (
-    <Box>
+    <>
       <Container maxWidth="sm">
         <NewTodoForm onAddTodo={addTodoHandler} />
       </Container>
@@ -30,7 +30,7 @@ const Backlog = (props) => {
           statusRequirement="backlog"
         ></TodoList>
       </Container>
-    </Box>
+    </>
   );
 };
 
