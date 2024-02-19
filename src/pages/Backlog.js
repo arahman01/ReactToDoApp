@@ -1,4 +1,4 @@
-import { Container, Box } from "@mui/material";
+import { Container } from "@mui/material";
 import { useDispatch } from "react-redux";
 
 import TodoList from "../components/TodoList";
