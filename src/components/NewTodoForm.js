@@ -7,7 +7,11 @@ const NewTodoForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    const enteredTodo = todoInputRef.current.value;
+    const enteredTodo = todoInputRef.current.value.trim();
+
+    if (!enteredTodo) {
+      return; // Do nothing if no text is entered
+    }
 
     const todoData = {
       id: Math.random().toString(),
@@ -33,7 +37,7 @@ const NewTodoForm = (props) => {
         required
         sx={{ color: "primary.main", borderRadius: 1 }}
       />
-      <Button onClick={submitHandler} variant="outlined" sx={{mt: 0.5}}>
+      <Button onClick={submitHandler} variant="outlined" sx={{ mt: 0.5 }}>
         Add
       </Button>
     </Box>
